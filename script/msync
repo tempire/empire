@@ -1,0 +1,10 @@
+#!/usr/bin/env perl
+
+use lib 'lib';
+
+use Msync;
+
+Msync->run;
+
+1;
+

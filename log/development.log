@@ -1,0 +1,24 @@
+Sat Mar 12 16:06:01 2011 info Mojo::Server::Daemon:316 [32526]: Server listening (http://*:3000)
+Sat Mar 12 16:06:03 2011 debug Mojolicious:22 [32526]: Your secret passphrase needs to be changed!!!
+Sat Mar 12 16:06:03 2011 debug Mojolicious::Plugin::RequestTimer:24 [32526]: GET / (Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16).
+Sat Mar 12 16:06:03 2011 debug Mojolicious::Plugin::EplRenderer:61 [32526]: Template "not_found.development.html.ep" not found.
+Sat Mar 12 16:06:03 2011 debug Mojolicious::Plugin::EplRenderer:61 [32526]: Template "not_found.html.ep" not found.
+Sat Mar 12 16:06:03 2011 debug Mojolicious::Plugin::RequestTimer:48 [32526]: 404 Not Found (0.012929s, 77.346/s).
+Sat Mar 12 17:22:45 2011 debug Mojolicious:22 [53620]: Your secret passphrase needs to be changed!!!
+Sat Mar 12 17:22:45 2011 debug Mojolicious::Plugin::RequestTimer:24 [53620]: GET /welcome (Mojolicious (Perl)).
+Sat Mar 12 17:22:45 2011 debug Mojolicious::Routes:458 [53620]: Dispatching Nempire::Example->welcome.
+Sat Mar 12 17:22:45 2011 debug Mojolicious::Plugin::RequestTimer:48 [53620]: 200 OK (0.044401s, 22.522/s).
+Sat Mar 12 17:23:00 2011 info Mojo::Server::Daemon:316 [53630]: Server listening (http://*:3000)
+Sat Mar 12 17:23:07 2011 debug Mojolicious:22 [53630]: Your secret passphrase needs to be changed!!!
+Sat Mar 12 17:23:07 2011 debug Mojolicious::Plugin::RequestTimer:24 [53630]: GET / (Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16).
+Sat Mar 12 17:23:07 2011 debug Mojolicious::Plugin::EplRenderer:61 [53630]: Template "not_found.development.html.ep" not found.
+Sat Mar 12 17:23:07 2011 debug Mojolicious::Plugin::EplRenderer:61 [53630]: Template "not_found.html.ep" not found.
+Sat Mar 12 17:23:07 2011 debug Mojolicious::Plugin::RequestTimer:48 [53630]: 404 Not Found (0.012289s, 81.374/s).
+Sat Mar 12 17:23:08 2011 debug Mojolicious::Plugin::RequestTimer:24 [53630]: GET / (Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16).
+Sat Mar 12 17:23:08 2011 debug Mojolicious::Plugin::EplRenderer:61 [53630]: Template "not_found.development.html.ep" not found.
+Sat Mar 12 17:23:08 2011 debug Mojolicious::Plugin::EplRenderer:61 [53630]: Template "not_found.html.ep" not found.
+Sat Mar 12 17:23:08 2011 debug Mojolicious::Plugin::RequestTimer:48 [53630]: 404 Not Found (0.005855s, 170.794/s).
+Sat Mar 12 19:14:35 2011 debug Mojolicious:22 [65175]: Your secret passphrase needs to be changed!!!
+Sat Mar 12 19:14:35 2011 debug Mojolicious::Plugin::RequestTimer:24 [65175]: GET /welcome (Mojolicious (Perl)).
+Sat Mar 12 19:14:35 2011 debug Mojolicious::Routes:458 [65175]: Dispatching Nempire::Example->welcome.
+Sat Mar 12 19:14:35 2011 debug Mojolicious::Plugin::RequestTimer:48 [65175]: 200 OK (0.040951s, 24.419/s).

@@ -1,11 +1,15 @@
 package Nempire;
+
 use Mojo::Base 'Mojolicious';
 
-# This method will run once at server start
+has schema => sub {
+    my $dsn = 'dbi:SQLite:' . ( $ENV{TEST_DB} || 'nempire.db' );
+    return N::Schema->connect($dsn);
+};
+
 sub startup {
   my $self = shift;
 
-  # Documentation browser under "/perldoc" (this plugin requires Perl 5.10)
   $self->plugin('pod_renderer');
 
   # Routes
