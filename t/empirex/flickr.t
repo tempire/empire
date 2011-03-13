@@ -14,7 +14,8 @@ ok my @sets = $f->photosets;
 cmp_ok @sets, '>', 10;
 ok $sets[0]->{id};
 isnt ref $sets[0]->{title}      => 'hash';
-isnt ref $sets[0]->{descrption} => 'hash';
+ok exists $sets[0]->{description};
+isnt ref $sets[0]->{description} => 'hash';
 
 # Photo list
 ok my @photos = $f->photos($sets[0]->{id});

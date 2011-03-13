@@ -1,0 +1,19 @@
+[   Photoset => {
+        id            => 1,
+        title         => 'A title?',
+        server        => 'whatever',
+        farm          => 'whatever',
+        photos        => 1,
+        videos        => 1,
+        secret        => 1,
+        idx           => 1,
+        description   => 'whatever',
+        primary_photo => 1,
+        photos        => [
+            {   id    => 1,
+                taken => '2001-01-01 04:04:04',
+                region => 'Alliance, Nebraska'
+            }
+        ]
+    },
+]

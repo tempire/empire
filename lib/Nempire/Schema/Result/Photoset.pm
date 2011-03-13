@@ -62,6 +62,7 @@ __PACKAGE__->table("photosets");
 =head2 primary_photo
 
   data_type: 'char'
+  is_foreign_key: 1
   is_nullable: 1
   size: 20
 
@@ -101,7 +102,7 @@ __PACKAGE__->add_columns(
   "secret",
   { data_type => "char", is_nullable => 0, size => 20 },
   "primary_photo",
-  { data_type => "char", is_nullable => 1, size => 20 },
+  { data_type => "char", is_foreign_key => 1, is_nullable => 1, size => 20 },
   "idx",
   { data_type => "integer", is_nullable => 0 },
   "description",
@@ -129,14 +130,57 @@ Related object: L<Nempire::Schema::Result::Photo>
 __PACKAGE__->has_many(
   "photos",
   "Nempire::Schema::Result::Photo",
-  { "foreign.photoset_id" => "self.id" },
+  { "foreign.photoset" => "self.id" },
   { cascade_copy => 0, cascade_delete => 0 },
 );
 
+=head2 primary_photo
 
-# Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-03-12 19:43:43
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:flkgHh0vgK37nzWEZa3Xxg
+Type: belongs_to
+
+Related object: L<Nempire::Schema::Result::Photo>
+
+=cut
+
+__PACKAGE__->belongs_to(
+  "primary_photo",
+  "Nempire::Schema::Result::Photo",
+  { id => "primary_photo" },
+  {
+    is_deferrable => 1,
+    join_type     => "LEFT",
+    on_delete     => "CASCADE",
+    on_update     => "CASCADE",
+  },
+);
 
 
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
+# Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-03-12 21:00:40
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:g4aav56iFJy62zsHNTLsGg
+
+sub date   { shift->primary_photo->taken }
+sub region { shift->primary_photo->region }
+
+sub url_title {
+    my $title = shift->title;
+
+    return lc $title if $title =~ s/[^a-zA-Z0-9]+/_/g;
+}
+
 1;
+
+=head1 METHODS
+
+=head2 date
+
+Datetime object from set's primary photo
+
+=head2 url_title
+
+Title for use in readable URLs - uses id for incompatible titles
+
+=head2 region
+
+Region from first image in photoset
+
+=cut

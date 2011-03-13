@@ -2,16 +2,20 @@ package Msync::Command::Flickr;
 
 use Msync -command;
 
-use Modern::Perl;
-use EmpireX::Flickr;
 use Devel::Dwarn;
+use EmpireX::Flickr;
+use Modern::Perl;
+#use Parallel::ForkManager;
 
 sub opt_spec {
     return (
         ['set|s=s'     => 'Photoset name or id'],
         ['sets-only|o' => 'Just sync photoset index'],
         ['photo|p=s'   => 'Photo id'],
-        ['all|a'       => 'Sync everything']
+        ['all|a'       => 'Sync everything'],
+        [   'max-children|m=i' => 'Max children to fork. Defaults to 10',
+            {default => 10}
+        ],
     );
 }
 
@@ -34,58 +38,75 @@ sub execute {
 
     my $schema = $self->app->schema;
 
-    my $f = EmpireX::Flickr->new->login;
+    $|++;
+
+    my $f  = EmpireX::Flickr->new->login;
+    #my $pm = Parallel::ForkManager->new($opt->max_children);
+
+    my @txns;
 
     my $i = 0;
     foreach my $set (reverse $f->photosets) {
+        #my $pid = $pm->start and next;
+
         $i++;
 
         next
           if $parameter
-              and ($parameter ne $set->{id} and $parameter ne $set->{title});
+              and
+              ($parameter ne $set->{id} and $parameter ne $set->{title});
 
-        $set->{primary_photo} = $set->{primary};
-        $set->{idx}           = $i;
+        my $txn = sub {
 
-        delete $set->{primary};
-        print "$set->{title}\n";
+            $set->{primary_photo} = $set->{primary};
+            $set->{idx}           = $i;
 
-        my $photoset =
-          $schema->resultset('Photoset')->update_or_create($set);
+            delete $set->{primary};
 
-        #my $riak = $self->app->riak;
-        #my $rphotoset =
-        #  $riak->bucket('photosets')->new_object($set->{id} => $set)->store;
+            my $photoset =
+              $schema->resultset('Photoset')->update_or_create($set);
 
-        next if $subtype and $subtype eq "photosets";
+         #my $riak = $self->app->riak;
+         #my $rphotoset =
+         #  $riak->bucket('photosets')->new_object($set->{id} => $set)->store;
 
-        $photoset = $schema->resultset('Photoset')->find($set->{id});
+            next if $subtype and $subtype eq "photosets";
 
-        print "Getting photos for $set->{title} ($set->{id})...";
-        my @photos = $f->photos($set->{id});
-        print @photos . "\n";
+            $photoset = $schema->resultset('Photoset')->find($set->{id});
 
-        my $i = 0;
-        foreach (@photos) {
-            my %info  = $f->photo_info($_->{id});
-            my %sizes = $f->photo_sizes($_->{id});
+            print "$set->{title} ($set->{id})...";
+            my @photos = $f->photos($set->{id});
+            print @photos . "\n";
 
-            foreach (keys %sizes) {
-                $info{$_} = $sizes{$_};
+            my $i = 0;
+            foreach (@photos) {
+                my %info  = $f->photo_info($_->{id});
+                my %sizes = $f->photo_sizes($_->{id});
+
+                foreach (keys %sizes) {
+                    $info{$_} = $sizes{$_};
+                }
+                delete $info{large};
+                delete $info{'medium 640'};
+
+                $info{idx} = ++$i;
+
+                print ".";
+
+                #printf "%0" . length(scalar @photos) . "d", $i;
+                #print "\b" x length(scalar @photos);
+
+                #$riak->bucket('photos')->new_object($info->{id} => $info)
+                #  ->store
+                #  ->add_link($rphotoset => 'set');
+                $photoset->photos->update_or_create(\%info);
             }
-            delete $info{large};
-            delete $info{'medium 640'};
 
-            $info{idx} = ++$i;
+        };
+        $schema->txn_do($txn);
 
-            printf "%0" . length(scalar @photos) . "d", $i;
-            print "\b" x length(scalar @photos);
+        #$pm->finish;
 
-            #$riak->bucket('photos')->new_object($info->{id} => $info)
-            #  ->store
-            #  ->add_link($rphotoset => 'set');
-            $photoset->photos->update_or_create(\%info);
-        }
         print "\n";
     }
 }
