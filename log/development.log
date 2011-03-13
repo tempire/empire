@@ -613,3 +613,35 @@ Sun Mar 13 01:03:31 2011 debug Mojolicious:22 [76381]: Your secret passphrase ne
 Sun Mar 13 01:03:31 2011 debug Mojolicious:22 [76381]: Your secret passphrase needs to be changed!!!
 Sun Mar 13 01:03:31 2011 debug Mojolicious:22 [76381]: Your secret passphrase needs to be changed!!!
 Sun Mar 13 01:03:31 2011 debug Mojolicious:22 [76381]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:09 2011 info Mojo::Server::Daemon:316 [76476]: Server listening (http://*:3000)
+Sun Mar 13 01:13:10 2011 debug Mojolicious:22 [76476]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:10 2011 debug Mojolicious::Plugin::RequestTimer:24 [76476]: GET /photos (Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16).
+Sun Mar 13 01:13:10 2011 debug Mojolicious::Routes:458 [76476]: Dispatching Nempire::Photos->index.
+Sun Mar 13 01:13:11 2011 debug Mojolicious::Plugin::RequestTimer:48 [76476]: 200 OK (1.221316s, 0.819/s).
+Sun Mar 13 01:13:11 2011 debug Mojolicious:22 [76476]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:12 2011 debug Mojolicious:22 [76476]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:12 2011 debug Mojolicious:22 [76476]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:12 2011 debug Mojolicious:22 [76476]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:12 2011 debug Mojolicious:22 [76476]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:12 2011 debug Mojolicious:22 [76476]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:14 2011 debug Mojolicious:22 [76476]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:27 2011 debug Mojolicious:22 [76476]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:13:27 2011 debug Mojolicious::Plugin::RequestTimer:24 [76476]: GET /photos (Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16).
+Sun Mar 13 01:13:27 2011 debug Mojolicious::Routes:458 [76476]: Dispatching Nempire::Photos->index.
+Sun Mar 13 01:13:28 2011 debug Mojolicious::Plugin::RequestTimer:48 [76476]: 200 OK (0.960966s, 1.041/s).
+Sun Mar 13 01:14:27 2011 info Mojo::Server::Daemon:316 [76491]: Server listening (http://*:3000)
+Sun Mar 13 01:14:28 2011 debug Mojolicious:22 [76491]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:14:28 2011 debug Mojolicious::Plugin::RequestTimer:24 [76491]: GET /photos (Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16).
+Sun Mar 13 01:14:28 2011 debug Mojolicious::Routes:458 [76491]: Dispatching Nempire::Photos->index.
+Sun Mar 13 01:14:29 2011 debug Mojolicious::Plugin::RequestTimer:48 [76491]: 200 OK (1.143540s, 0.874/s).
+Sun Mar 13 01:14:30 2011 debug Mojolicious:22 [76491]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:14:30 2011 debug Mojolicious:22 [76491]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:14:30 2011 debug Mojolicious::Plugin::RequestTimer:24 [76491]: GET /photos (Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16).
+Sun Mar 13 01:14:30 2011 debug Mojolicious::Routes:458 [76491]: Dispatching Nempire::Photos->index.
+Sun Mar 13 01:14:31 2011 debug Mojolicious::Plugin::RequestTimer:48 [76491]: 200 OK (0.943174s, 1.060/s).
+Sun Mar 13 01:14:31 2011 debug Mojolicious:22 [76491]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:14:31 2011 debug Mojolicious:22 [76491]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:14:31 2011 debug Mojolicious:22 [76491]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:14:32 2011 debug Mojolicious:22 [76491]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:14:32 2011 debug Mojolicious:22 [76491]: Your secret passphrase needs to be changed!!!
+Sun Mar 13 01:14:32 2011 debug Mojolicious:22 [76491]: Your secret passphrase needs to be changed!!!

@@ -1,7 +1,10 @@
 % layout 'default';
 % title int(@$sets) . ' Phased albums';
 
-<%= $photo_count %> photos in <%= int @$sets %> albums
+%= $photo_count
+photos in
+%= int @$sets
+albums
 
 <div id="photosets" class="thumbnails">
 
