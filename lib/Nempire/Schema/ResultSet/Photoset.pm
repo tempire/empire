@@ -5,12 +5,12 @@ use warnings;
 use base "DBIx::Class::ResultSet";
 
 sub by_id_or_title {
-   my $self = shift;
-   my $title = shift;
+    my $self  = shift;
+    my $title = shift;
 
-   return $self->find( $title ) if $title =~ /^\d+$/;
+    return $self->find($title) if $title =~ /^\d+$/;
 
-   return $self->search( { title => { "LIKE" => $title } } )->single;
+    return $self->find({title => {"LIKE" => $title}});
 }
 
 1;

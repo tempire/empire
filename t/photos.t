@@ -32,7 +32,6 @@ ok my $photo_url =
 
 like $photo_url => qr|^/photos/\d+$|;
 
-warn $photo_url;
 $t->get_ok($photo_url)->status_is(200)->text_like('h1 a.title' => qr/$set_title/);
 
 done_testing;
