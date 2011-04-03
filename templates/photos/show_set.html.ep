@@ -1,7 +1,7 @@
 % layout 'default';
 % title $set->title . ' Phased albums';
 
-<div id="<%= $set->url_title %>" class="set thumbnails slide">
+<div id="<%= $set->url_title %>" class="photoset thumbnails slide">
   <div class="toolbar">
     % if ($set->previous) {
       <a href="/photos/<%= $set->previous->url_title %>" class="previous">Previous</a>
@@ -18,12 +18,12 @@
       <li><span class="time_since">
         <%= $set->time_since %></span></li>
       <li><span class="count">
-        <%= $set->photo_count %> Photos</span></li>
+        <%= $set->photos->count %> Photos</span></li>
     </ul>
   </div>
   <div>
     % foreach my $photo ( $set->photos->all ) {
-      <a href="#<%= $set->url_title %>"
+      <a href="/photos/<%= $photo->id %>"
           class="slide"
           rel:index="<%= $photo->idx %>" 
           rel:medium="<%= $photo->medium %>">

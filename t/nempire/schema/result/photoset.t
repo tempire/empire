@@ -26,7 +26,7 @@ is $set->primary->id => $set->primary_photo->id, 'primary photo alias';
 is $set->region      => 'Texas';
 is $set->url_title   => $photoset_title;
 is $set->location    => 'League City, Texas';
-is $set->time_since  => 1;
+like $set->time_since => qr/\d+ days and \d+ hours ago/;
 
 is $set->previous->id => $prev_photoset_id, 'previous photoset';
 is $set->next->id     => $next_photoset_id, 'next photoset';

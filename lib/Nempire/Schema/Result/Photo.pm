@@ -217,6 +217,28 @@ __PACKAGE__->has_many(
 # Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-03-12 21:00:40
 # DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:tE5yRrWVQRn/KUo9euKbRA
 
+=head2 set
+
+Type: belongs_to
+
+Related object: L<Nempire::Schema::Result::Photoset>
+
+Alias for L<Nempire::Schema::Result::Photo/photoset>
+
+=cut
+
+__PACKAGE__->belongs_to(
+  "set",
+  "Nempire::Schema::Result::Photoset",
+  { id => "photoset" },
+  {
+    is_deferrable => 1,
+    join_type     => "LEFT",
+    on_delete     => "CASCADE",
+    on_update     => "CASCADE",
+  },
+);
+
 sub location {
   my $self = shift;
 
@@ -225,11 +247,52 @@ sub location {
   $location .= $self->region if $self->region;
 }
 
+sub next {
+    my $self = shift;
+
+    return if !$self->idx;
+
+    return $self->result_source->resultset->find(
+        {   photoset => $self->set->id,
+            idx      => $self->idx + 1
+        }
+    );
+}
+
+sub previous {
+    my $self = shift;
+
+    return if !$self->idx;
+
+    return $self->result_source->resultset->find(
+        {   photoset => $self->set->id,
+            idx      => $self->idx - 1
+        }
+    );
+}
+
+sub time_since {
+    my $self = shift;
+    return Time::Duration::ago(time - $self->taken->epoch) if $self->taken;
+}
+
 =head1 METHODS
 
 =head2 location
 
 City, State
+
+=head2 previous
+
+Previous photo in set according to idx
+
+=head2 next
+
+Next photo in set according to idx
+
+=head2 time_since
+
+Time since photo was taken
 
 =cut
 

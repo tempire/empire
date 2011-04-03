@@ -13,6 +13,19 @@ sub index {
     $self->render(template => 'photos/index');
 }
 
+sub show {
+    my $self = shift;
+    my $id   = $self->stash->{id};
+
+    my $photo = $self->db->resultset('Photo')->find($id)
+      or $self->redirect_to("/photos")
+      and return;
+
+    $self->stash(photo => $photo);
+
+    $self->render(template => 'photos/show');
+}
+
 sub show_set {
     my $self = shift;
     my $id   = $self->stash->{id};
@@ -25,4 +38,5 @@ sub show_set {
 
     $self->render(template => 'photos/show_set');
 }
+
 1;

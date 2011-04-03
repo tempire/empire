@@ -1641,3 +1641,736 @@ Sat Apr  2 23:49:17 2011 debug Mojolicious:22 [22372]: Your secret passphrase ne
 Sat Apr  2 23:49:17 2011 debug Mojolicious:22 [22372]: Your secret passphrase needs to be changed!!!
 Sat Apr  2 23:49:18 2011 debug Mojolicious:22 [22372]: Your secret passphrase needs to be changed!!!
 Sat Apr  2 23:49:18 2011 debug Mojolicious:22 [22372]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:05 2011 debug Mojolicious:22 [22372]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:05 2011 debug Mojolicious::Plugin::RequestTimer:24 [22372]: GET /photos/chico_downtime (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:54:05 2011 debug Mojolicious::Routes:458 [22372]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:54:05 2011 error Mojolicious::Controller:318 [22372]: Can't locate object method "photo_count" via package "Nempire::Schema::Result::Photoset" at template line 21, near "    </ul>".
+16:       <li><span class="time">
+17:         <%= $set->date->month_name %>, <%= $set->date->year %></span></li>
+18:       <li><span class="time_since">
+19:         <%= $set->time_since %></span></li>
+20:       <li><span class="count">
+21:         <%= $set->photo_count %> Photos</span></li>
+22:     </ul>
+23:   </div>
+24:   <div>
+25:     % foreach my $photo ( $set->photos->all ) {
+26:       <a href="#<%= $set->url_title %>"
+
+Sat Apr  2 23:54:05 2011 debug Mojolicious::Plugin::EplRenderer:61 [22372]: Template "exception.development.html.ep" not found.
+Sat Apr  2 23:54:05 2011 debug Mojolicious::Plugin::EplRenderer:61 [22372]: Template "exception.html.ep" not found.
+Sat Apr  2 23:54:05 2011 debug Mojolicious::Plugin::RequestTimer:48 [22372]: 500 Internal Server Error (0.074402s, 13.440/s).
+Sat Apr  2 23:54:06 2011 debug Mojolicious:22 [22372]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:06 2011 debug Mojolicious:22 [22372]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:06 2011 debug Mojolicious:22 [22372]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:06 2011 debug Mojolicious:22 [22372]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:06 2011 debug Mojolicious:22 [22372]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:51 2011 info Mojo::Server::Daemon:319 [24224]: Server listening (http://*:3000)
+Sat Apr  2 23:54:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:52 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/chico_downtime (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:54:52 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:54:52 2011 error Mojolicious::Controller:318 [24224]: Can't locate object method "photo_count" via package "Nempire::Schema::Result::Photoset" at template line 21, near "    </ul>".
+16:       <li><span class="time">
+17:         <%= $set->date->month_name %>, <%= $set->date->year %></span></li>
+18:       <li><span class="time_since">
+19:         <%= $set->time_since %></span></li>
+20:       <li><span class="count">
+21:         <%= $set->photo_count %> Photos</span></li>
+22:     </ul>
+23:   </div>
+24:   <div>
+25:     % foreach my $photo ( $set->photos->all ) {
+26:       <a href="#<%= $set->url_title %>"
+
+Sat Apr  2 23:54:52 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "exception.development.html.ep" not found.
+Sat Apr  2 23:54:52 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "exception.html.ep" not found.
+Sat Apr  2 23:54:52 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 500 Internal Server Error (0.289326s, 3.456/s).
+Sat Apr  2 23:54:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:54:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:55:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:55:52 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/chico_downtime (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:55:52 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:55:52 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 200 OK (0.037298s, 26.811/s).
+Sat Apr  2 23:55:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:55:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:55:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:55:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:55:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:55:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:28 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:28 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/chico_downtime (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:56:28 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:56:28 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 200 OK (0.038434s, 26.019/s).
+Sat Apr  2 23:56:28 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:28 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:28 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:28 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:29 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:29 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:54 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:54 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/chico_downtime (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:56:54 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:56:54 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 200 OK (0.036470s, 27.420/s).
+Sat Apr  2 23:56:54 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:54 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:54 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:54 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:55 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:55 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:55 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:55 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/houston_correlation (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:56:55 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:56:55 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 200 OK (0.035626s, 28.069/s).
+Sat Apr  2 23:56:56 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:56 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:56 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:56 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:56 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:56 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:57 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:57 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/chico_downtime (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:56:57 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:56:57 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 200 OK (0.035294s, 28.333/s).
+Sat Apr  2 23:56:57 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:57 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:57 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:57 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:57 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:57 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:58 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:58 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/return_to_stinson_beach (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:56:58 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:56:58 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 200 OK (0.035350s, 28.289/s).
+Sat Apr  2 23:56:58 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:58 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:58 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:58 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:58 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:56:58 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:57:00 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:57:00 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/slo_day (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:57:00 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:57:00 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 200 OK (0.035540s, 28.137/s).
+Sat Apr  2 23:57:00 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:57:00 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:57:00 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:57:00 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:57:00 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:57:00 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:35 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:35 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/slo_day (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:58:35 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sat Apr  2 23:58:35 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 200 OK (0.035632s, 28.065/s).
+Sat Apr  2 23:58:35 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:35 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:35 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:35 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:35 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:36 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:43 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:43 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/4676866217 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sat Apr  2 23:58:43 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "not_found.development.html.ep" not found.
+Sat Apr  2 23:58:43 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "not_found.html.ep" not found.
+Sat Apr  2 23:58:43 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 404 Not Found (0.013475s, 74.212/s).
+Sat Apr  2 23:58:43 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:43 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:43 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:43 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:43 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:43 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:43 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sat Apr  2 23:58:44 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:22:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:22:52 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/slo_day (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:22:52 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:22:52 2011 error Mojolicious::Routes:473 [24224]: Global symbol "$photo" requires explicit package name at script/../lib/Nempire/Photos.pm line 24.
+Compilation failed in require at (eval 2340) line 2.
+
+Sun Apr  3 00:22:52 2011 error Mojolicious::Controller:318 [24224]: Global symbol "$photo" requires explicit package name at script/../lib/Nempire/Photos.pm line 24.
+Compilation failed in require at (eval 2340) line 2.
+
+Sun Apr  3 00:22:52 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:22:52 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "exception.html.ep" not found.
+Sun Apr  3 00:22:52 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 500 Internal Server Error (0.096306s, 10.384/s).
+Sun Apr  3 00:22:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:22:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:22:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:22:52 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:22:53 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:05 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:05 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/slo_day (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:23:05 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:23:05 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 200 OK (0.051959s, 19.246/s).
+Sun Apr  3 00:23:05 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:05 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:06 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:06 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:06 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:06 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:11 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:11 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:23:11 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:23:11 2011 error Mojolicious::Controller:318 [24224]: Unterminated <> operator at (eval 2532) line 32.
+
+Sun Apr  3 00:23:11 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:23:11 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "exception.html.ep" not found.
+Sun Apr  3 00:23:11 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 500 Internal Server Error (0.106068s, 9.428/s).
+Sun Apr  3 00:23:11 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:11 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:11 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:12 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:12 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:35 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:35 2011 debug Mojolicious::Plugin::RequestTimer:24 [24224]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:23:35 2011 debug Mojolicious::Routes:458 [24224]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:23:36 2011 error Mojolicious::Controller:318 [24224]: Unterminated <> operator at (eval 2620) line 32.
+
+Sun Apr  3 00:23:36 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:23:36 2011 debug Mojolicious::Plugin::EplRenderer:61 [24224]: Template "exception.html.ep" not found.
+Sun Apr  3 00:23:36 2011 debug Mojolicious::Plugin::RequestTimer:48 [24224]: 500 Internal Server Error (0.199699s, 5.008/s).
+Sun Apr  3 00:23:36 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:36 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:36 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:37 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:37 2011 debug Mojolicious:22 [24224]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:43 2011 info Mojo::Server::Daemon:319 [24465]: Server listening (http://*:3000)
+Sun Apr  3 00:23:44 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:44 2011 debug Mojolicious::Plugin::RequestTimer:24 [24465]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:23:44 2011 debug Mojolicious::Routes:458 [24465]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:23:45 2011 error Mojolicious::Controller:318 [24465]: Unterminated <> operator at (eval 369) line 32.
+
+Sun Apr  3 00:23:45 2011 debug Mojolicious::Plugin::EplRenderer:61 [24465]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:23:45 2011 debug Mojolicious::Plugin::EplRenderer:61 [24465]: Template "exception.html.ep" not found.
+Sun Apr  3 00:23:45 2011 debug Mojolicious::Plugin::RequestTimer:48 [24465]: 500 Internal Server Error (0.405881s, 2.464/s).
+Sun Apr  3 00:23:45 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:45 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:45 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:46 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:23:46 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:07 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:07 2011 debug Mojolicious::Plugin::RequestTimer:24 [24465]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:24:07 2011 debug Mojolicious::Routes:458 [24465]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:24:07 2011 error Mojolicious::Controller:318 [24465]: Unterminated <> operator at (eval 457) line 32.
+
+Sun Apr  3 00:24:07 2011 debug Mojolicious::Plugin::EplRenderer:61 [24465]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:24:07 2011 debug Mojolicious::Plugin::EplRenderer:61 [24465]: Template "exception.html.ep" not found.
+Sun Apr  3 00:24:07 2011 debug Mojolicious::Plugin::RequestTimer:48 [24465]: 500 Internal Server Error (0.191904s, 5.211/s).
+Sun Apr  3 00:24:08 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:08 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:08 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:08 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:08 2011 debug Mojolicious:22 [24465]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:12 2011 info Mojo::Server::Daemon:319 [24474]: Server listening (http://*:3000)
+Sun Apr  3 00:24:13 2011 debug Mojolicious:22 [24474]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:13 2011 debug Mojolicious::Plugin::RequestTimer:24 [24474]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:24:13 2011 debug Mojolicious::Routes:458 [24474]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:24:13 2011 error Mojolicious::Controller:318 [24474]: Unterminated <> operator at (eval 369) line 32.
+
+Sun Apr  3 00:24:13 2011 debug Mojolicious::Plugin::EplRenderer:61 [24474]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:24:13 2011 debug Mojolicious::Plugin::EplRenderer:61 [24474]: Template "exception.html.ep" not found.
+Sun Apr  3 00:24:13 2011 debug Mojolicious::Plugin::RequestTimer:48 [24474]: 500 Internal Server Error (0.404152s, 2.474/s).
+Sun Apr  3 00:24:14 2011 debug Mojolicious:22 [24474]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:14 2011 debug Mojolicious:22 [24474]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:14 2011 debug Mojolicious:22 [24474]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:14 2011 debug Mojolicious:22 [24474]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:14 2011 debug Mojolicious:22 [24474]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:44 2011 info Mojo::Server::Daemon:319 [24484]: Server listening (http://*:3000)
+Sun Apr  3 00:24:45 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:45 2011 debug Mojolicious::Plugin::RequestTimer:24 [24484]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:24:45 2011 debug Mojolicious::Routes:458 [24484]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:24:45 2011 error Mojolicious::Controller:318 [24484]: Unterminated <> operator at (eval 369) line 33.
+
+Sun Apr  3 00:24:45 2011 debug Mojolicious::Plugin::EplRenderer:61 [24484]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:24:45 2011 debug Mojolicious::Plugin::EplRenderer:61 [24484]: Template "exception.html.ep" not found.
+Sun Apr  3 00:24:45 2011 debug Mojolicious::Plugin::RequestTimer:48 [24484]: 500 Internal Server Error (0.384332s, 2.602/s).
+Sun Apr  3 00:24:45 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:45 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:45 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:46 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:24:46 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:07 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:07 2011 debug Mojolicious::Plugin::RequestTimer:24 [24484]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:25:07 2011 debug Mojolicious::Routes:458 [24484]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:25:08 2011 error Mojolicious::Controller:318 [24484]: syntax error at template line 4, near "% my $nav = begin".
+$_M "
+syntax error at template line 24, near "      %= $photo->set->title".
+syntax error at template line 35, near "    <li><span class="time_since">".
+1: % layout 'default';
+2: % my $title = $photo->set->title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
+3: % title $title
+4: 
+5: % my $nav = begin
+6:   <div class="nav">
+7:     % if ($photo->previous) {
+8:       <a class="previous" href="/photos/<%= $photo->previous->id %>">
+9:         Previous</a>
+
+Sun Apr  3 00:25:08 2011 debug Mojolicious::Plugin::EplRenderer:61 [24484]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:25:08 2011 debug Mojolicious::Plugin::EplRenderer:61 [24484]: Template "exception.html.ep" not found.
+Sun Apr  3 00:25:08 2011 debug Mojolicious::Plugin::RequestTimer:48 [24484]: 500 Internal Server Error (0.153792s, 6.502/s).
+Sun Apr  3 00:25:08 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:08 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:08 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:09 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:09 2011 debug Mojolicious:22 [24484]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:11 2011 info Mojo::Server::Daemon:319 [24493]: Server listening (http://*:3000)
+Sun Apr  3 00:25:11 2011 debug Mojolicious:22 [24493]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:11 2011 debug Mojolicious::Plugin::RequestTimer:24 [24493]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:25:11 2011 debug Mojolicious::Routes:458 [24493]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:25:11 2011 error Mojolicious::Controller:318 [24493]: syntax error at template line 4, near "% my $nav = begin".
+$_M "
+syntax error at template line 24, near "      %= $photo->set->title".
+syntax error at template line 35, near "    <li><span class="time_since">".
+1: % layout 'default';
+2: % my $title = $photo->set->title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
+3: % title $title
+4: 
+5: % my $nav = begin
+6:   <div class="nav">
+7:     % if ($photo->previous) {
+8:       <a class="previous" href="/photos/<%= $photo->previous->id %>">
+9:         Previous</a>
+
+Sun Apr  3 00:25:11 2011 debug Mojolicious::Plugin::EplRenderer:61 [24493]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:25:11 2011 debug Mojolicious::Plugin::EplRenderer:61 [24493]: Template "exception.html.ep" not found.
+Sun Apr  3 00:25:11 2011 debug Mojolicious::Plugin::RequestTimer:48 [24493]: 500 Internal Server Error (0.352376s, 2.838/s).
+Sun Apr  3 00:25:12 2011 debug Mojolicious:22 [24493]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:12 2011 debug Mojolicious:22 [24493]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:12 2011 debug Mojolicious:22 [24493]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:12 2011 debug Mojolicious:22 [24493]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:13 2011 debug Mojolicious:22 [24493]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:27 2011 info Mojo::Server::Daemon:319 [24502]: Server listening (http://*:3000)
+Sun Apr  3 00:25:28 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:28 2011 debug Mojolicious::Plugin::RequestTimer:24 [24502]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:25:28 2011 debug Mojolicious::Routes:458 [24502]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:25:28 2011 error Mojolicious::Controller:318 [24502]: syntax error at template line 4, near "".
+$_M "
+syntax error at template line 11, near "      %= $photo->set->title".
+syntax error at template line 31, near "    <li><span class="time_since">".
+1: % layout 'default';
+2: % my $title = $photo->set->title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
+3: % title $title
+4: 
+5: 
+6: <div id="<%= $photo->id %>" class="photo wide slide">
+7:   <span class="pagetitle hidden"><%= $title %></span>
+8:   <h1><a
+9:         class="title" 
+
+Sun Apr  3 00:25:28 2011 debug Mojolicious::Plugin::EplRenderer:61 [24502]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:25:28 2011 debug Mojolicious::Plugin::EplRenderer:61 [24502]: Template "exception.html.ep" not found.
+Sun Apr  3 00:25:28 2011 debug Mojolicious::Plugin::RequestTimer:48 [24502]: 500 Internal Server Error (0.348497s, 2.869/s).
+Sun Apr  3 00:25:28 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:29 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:29 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:29 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:29 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:44 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:44 2011 debug Mojolicious::Plugin::RequestTimer:24 [24502]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:25:44 2011 debug Mojolicious::Routes:458 [24502]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:25:44 2011 error Mojolicious::Controller:318 [24502]: syntax error at template line 4, near "".
+$_M "
+1: % layout 'default';
+2: % my $title = $photo->set->title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
+3: % title $title
+4: 
+5: 
+6: <div id="<%= $photo->id %>" class="photo wide slide">
+7:   <span class="pagetitle hidden"><%= $title %></span>
+8:   <h1><a
+9:         class="title" 
+
+Sun Apr  3 00:25:44 2011 debug Mojolicious::Plugin::EplRenderer:61 [24502]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:25:44 2011 debug Mojolicious::Plugin::EplRenderer:61 [24502]: Template "exception.html.ep" not found.
+Sun Apr  3 00:25:44 2011 debug Mojolicious::Plugin::RequestTimer:48 [24502]: 500 Internal Server Error (0.127120s, 7.867/s).
+Sun Apr  3 00:25:44 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:44 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:44 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:45 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:45 2011 debug Mojolicious:22 [24502]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:49 2011 info Mojo::Server::Daemon:319 [24511]: Server listening (http://*:3000)
+Sun Apr  3 00:25:49 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:49 2011 debug Mojolicious::Plugin::RequestTimer:24 [24511]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:25:49 2011 debug Mojolicious::Routes:458 [24511]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:25:49 2011 error Mojolicious::Controller:318 [24511]: syntax error at template line 4, near "".
+$_M "
+1: % layout 'default';
+2: % my $title = $photo->set->title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
+3: % title $title
+4: 
+5: 
+6: <div id="<%= $photo->id %>" class="photo wide slide">
+7:   <span class="pagetitle hidden"><%= $title %></span>
+8:   <h1><a
+9:         class="title" 
+
+Sun Apr  3 00:25:49 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:25:49 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.html.ep" not found.
+Sun Apr  3 00:25:50 2011 debug Mojolicious::Plugin::RequestTimer:48 [24511]: 500 Internal Server Error (0.355873s, 2.810/s).
+Sun Apr  3 00:25:50 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:50 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:50 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:50 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:50 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:56 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:56 2011 debug Mojolicious::Plugin::RequestTimer:24 [24511]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:25:56 2011 debug Mojolicious::Routes:458 [24511]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:25:56 2011 error Mojolicious::Controller:318 [24511]: syntax error at template line 4, near "".
+$_M "
+1: % layout 'default';
+2: % my $title = $photo->set->title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
+3: % title $title
+4: 
+5: 
+6: <div id="<%= $photo->id %>" class="photo wide slide">
+7:   <span class="pagetitle hidden"><%= $title %></span>
+8:   <h1><a
+9:         class="title" 
+
+Sun Apr  3 00:25:56 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:25:56 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.html.ep" not found.
+Sun Apr  3 00:25:56 2011 debug Mojolicious::Plugin::RequestTimer:48 [24511]: 500 Internal Server Error (0.143100s, 6.988/s).
+Sun Apr  3 00:25:57 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:57 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:57 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:57 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:25:57 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:05 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:05 2011 debug Mojolicious::Plugin::RequestTimer:24 [24511]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:26:05 2011 debug Mojolicious::Routes:458 [24511]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:26:05 2011 error Mojolicious::Controller:318 [24511]: Can't locate object method "set" via package "Nempire::Schema::Result::Photo" at template line 2, near "".
+1: % layout 'default';
+2: % my $title = $photo->set->title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
+3: 
+4: 
+5: <div id="<%= $photo->id %>" class="photo wide slide">
+6:   <span class="pagetitle hidden"><%= $title %></span>
+7:   <h1><a
+
+Sun Apr  3 00:26:05 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:26:05 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.html.ep" not found.
+Sun Apr  3 00:26:05 2011 debug Mojolicious::Plugin::RequestTimer:48 [24511]: 500 Internal Server Error (0.172573s, 5.795/s).
+Sun Apr  3 00:26:05 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:05 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:05 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:06 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:06 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:16 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:16 2011 debug Mojolicious::Plugin::RequestTimer:24 [24511]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:26:16 2011 debug Mojolicious::Routes:458 [24511]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:26:16 2011 error Mojolicious::Controller:318 [24511]: Can't locate object method "set" via package "Nempire::Schema::Result::Photo" at template line 2, near "% title $title;".
+1: % layout 'default';
+2: % my $title = $photo->set->title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
+3: % title $title;
+4: 
+5: 
+6: <div id="<%= $photo->id %>" class="photo wide slide">
+7:   <span class="pagetitle hidden"><%= $title %></span>
+
+Sun Apr  3 00:26:16 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:26:16 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.html.ep" not found.
+Sun Apr  3 00:26:16 2011 debug Mojolicious::Plugin::RequestTimer:48 [24511]: 500 Internal Server Error (0.143002s, 6.993/s).
+Sun Apr  3 00:26:16 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:16 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:16 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:17 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:26:17 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:06 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:06 2011 debug Mojolicious::Plugin::RequestTimer:24 [24511]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:29:06 2011 debug Mojolicious::Routes:458 [24511]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:29:06 2011 error Mojolicious::Controller:318 [24511]: Nempire::Schema::Result::Photo::set(): No such relationship 'set' on Photo at (eval 723) line 2
+62:     }
+63: 
+64:     my $self = { msg => $msg };
+65:     bless $self => $class;
+66: 
+67:     die $self;
+68: }
+69: 
+70: =head2 rethrow
+71: 
+72: This method provides some syntactic sugar in order to
+
+Sun Apr  3 00:29:06 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:29:06 2011 debug Mojolicious::Plugin::EplRenderer:61 [24511]: Template "exception.html.ep" not found.
+Sun Apr  3 00:29:06 2011 debug Mojolicious::Plugin::RequestTimer:48 [24511]: 500 Internal Server Error (0.282030s, 3.546/s).
+Sun Apr  3 00:29:06 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:07 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:07 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:07 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:07 2011 debug Mojolicious:22 [24511]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:14 2011 info Mojo::Server::Daemon:319 [24570]: Server listening (http://*:3000)
+Sun Apr  3 00:29:15 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:15 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:29:15 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:29:15 2011 error Mojolicious::Controller:318 [24570]: Can't locate object method "previous" via package "Nempire::Schema::Result::Photo" at template line 17, near "      <a class="previous" href="/photos/<%= $photo->previous->id %>">".
+12:       %= $photo->set->title
+13:     </a>
+14:   </h1>
+15: 
+16:   <div class="nav">
+17:     % if ($photo->previous) {
+18:       <a class="previous" href="/photos/<%= $photo->previous->id %>">
+19:         Previous</a>
+20:     % }
+21:     % if ($photo->next) {
+22:       <a class="previous" href="/photos/<%= $photo->next->id %>">
+
+Sun Apr  3 00:29:15 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:29:15 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.html.ep" not found.
+Sun Apr  3 00:29:15 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 500 Internal Server Error (0.367391s, 2.722/s).
+Sun Apr  3 00:29:15 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:15 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:15 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:16 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:29:16 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:37:54 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:37:54 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:37:54 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:37:54 2011 error Mojolicious::Controller:318 [24570]: Can't locate object method "date" via package "Nempire::Schema::Result::Photo" at template line 31, near "    <li><span class="time_since">".
+26: 
+27:   <ul class="horizontal-list">
+28:     <li><span class="location">
+29:       <%= $photo->location %></span></li>
+30:     <li><span class="time">
+31:       <%= $photo->date->month_name %>, <%= $photo->date->year %></span></li>
+32:     <li><span class="time_since">
+33:       <%= $photo->time_since %></span></li>
+34:     <li><span class="count">
+35:       <%= $photo->idx %> of <%= $photo->set->photos->count %></span></li>
+36:   </ul>
+
+Sun Apr  3 00:37:54 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:37:54 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.html.ep" not found.
+Sun Apr  3 00:37:54 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 500 Internal Server Error (0.906358s, 1.103/s).
+Sun Apr  3 00:37:57 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:37:57 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:37:57 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:37:58 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:37:58 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:38:55 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:38:55 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:38:55 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:38:56 2011 error Mojolicious::Controller:318 [24570]: Can't locate object method "time_since" via package "Nempire::Schema::Result::Photo" at template line 33, near "    <li><span class="count">".
+28:     <li><span class="location">
+29:       <%= $photo->location %></span></li>
+30:     <li><span class="time">
+31:       <%= $photo->taken->month_name %>, <%= $photo->taken->year %></span></li>
+32:     <li><span class="time_since">
+33:       <%= $photo->time_since %></span></li>
+34:     <li><span class="count">
+35:       <%= $photo->idx %> of <%= $photo->set->photos->count %></span></li>
+36:   </ul>
+37: 
+38:   <br />
+
+Sun Apr  3 00:38:56 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:38:56 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.html.ep" not found.
+Sun Apr  3 00:38:56 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 500 Internal Server Error (1.358073s, 0.736/s).
+Sun Apr  3 00:38:56 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:38:57 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:38:57 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:38:57 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:38:57 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:40:52 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:40:52 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:40:52 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:40:53 2011 error Mojolicious::Controller:318 [24570]: Can't locate object method "medium_src" via package "Nempire::Schema::Result::Photo" at template line 43, near "    % }".
+38:   <br />
+39: 
+40:   <div class="photos">
+41:     % if ($photo->next) {
+42:       <a class="photo next" href="/photos/<%= $photo->next->id %>">
+43:         <img src="<%= $photo->medium_src %>" alt="<%= $photo->alt %>" /></a>
+44:     % }
+45:     % else {
+46:       <a class="photo" href="/photosets/<%= $photo->set->url_title %>">
+47:         <img src="<%= $photo->medium_src %>" alt="<%= $photo->description %>" /></a>
+48:     % }
+
+Sun Apr  3 00:40:53 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:40:53 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.html.ep" not found.
+Sun Apr  3 00:40:53 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 500 Internal Server Error (1.406622s, 0.711/s).
+Sun Apr  3 00:40:54 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:40:54 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:40:54 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:40:54 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:40:54 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:41:23 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:41:23 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:41:23 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:41:24 2011 error Mojolicious::Controller:318 [24570]: Can't locate object method "alt" via package "Nempire::Schema::Result::Photo" at template line 43, near "    % }".
+38:   <br />
+39: 
+40:   <div class="photos">
+41:     % if ($photo->next) {
+42:       <a class="photo next" href="/photos/<%= $photo->next->id %>">
+43:         <img src="<%= $photo->medium %>" alt="<%= $photo->alt %>" /></a>
+44:     % }
+45:     % else {
+46:       <a class="photo" href="/photosets/<%= $photo->set->url_title %>">
+47:         <img src="<%= $photo->medium %>" alt="<%= $photo->description %>" /></a>
+48:     % }
+
+Sun Apr  3 00:41:24 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.development.html.ep" not found.
+Sun Apr  3 00:41:24 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "exception.html.ep" not found.
+Sun Apr  3 00:41:24 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 500 Internal Server Error (1.285622s, 0.778/s).
+Sun Apr  3 00:41:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:41:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:41:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:41:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:41:26 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:18 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:18 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/4677493878 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:42:18 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:42:19 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (1.277883s, 0.783/s).
+Sun Apr  3 00:42:19 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:19 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:19 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:20 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:20 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:20 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:24 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:24 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/4677494278 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:42:24 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:42:25 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (1.560872s, 0.641/s).
+Sun Apr  3 00:42:26 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:26 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:26 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:26 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:26 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:42:26 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:04 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:04 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:43:04 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->index.
+Sun Apr  3 00:43:07 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (2.259648s, 0.443/s).
+Sun Apr  3 00:43:07 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:07 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:07 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:07 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:07 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:08 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:09 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:09 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/a_tampa_time (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:43:09 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:43:09 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (0.075286s, 13.283/s).
+Sun Apr  3 00:43:10 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:10 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:10 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:10 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:10 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:10 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:43:25 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/a_tampa_time (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:43:25 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:43:25 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (0.053779s, 18.595/s).
+Sun Apr  3 00:44:19 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:19 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /5429526635 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:44:19 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "not_found.development.html.ep" not found.
+Sun Apr  3 00:44:19 2011 debug Mojolicious::Plugin::EplRenderer:61 [24570]: Template "not_found.html.ep" not found.
+Sun Apr  3 00:44:19 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 404 Not Found (0.031702s, 31.544/s).
+Sun Apr  3 00:44:19 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:19 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:19 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:20 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:20 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:20 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:20 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:20 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:23 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:23 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/5429526635 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:44:23 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:44:24 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (1.391383s, 0.719/s).
+Sun Apr  3 00:44:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:25 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:28 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:44:28 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/5429526635 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:44:28 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:44:30 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (1.310799s, 0.763/s).
+Sun Apr  3 00:45:16 2011 debug Mojolicious:22 [24828]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:16 2011 debug Mojolicious::Plugin::RequestTimer:24 [24828]: GET /photos (Mojolicious (Perl)).
+Sun Apr  3 00:45:16 2011 debug Mojolicious::Routes:458 [24828]: Dispatching Nempire::Photos->index.
+Sun Apr  3 00:45:19 2011 debug Mojolicious::Plugin::RequestTimer:48 [24828]: 200 OK (2.632226s, 0.380/s).
+Sun Apr  3 00:45:20 2011 debug Mojolicious:22 [24828]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Plugin::RequestTimer:24 [24828]: GET /photos/a_tampa_time (Mojolicious (Perl)).
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Routes:458 [24828]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Plugin::RequestTimer:48 [24828]: 200 OK (0.069297s, 14.431/s).
+Sun Apr  3 00:45:20 2011 debug Mojolicious:22 [24828]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Plugin::RequestTimer:24 [24828]: GET /photos/72157625883388409 (Mojolicious (Perl)).
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Routes:458 [24828]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Plugin::RequestTimer:48 [24828]: 200 OK (0.067067s, 14.910/s).
+Sun Apr  3 00:45:20 2011 debug Mojolicious:22 [24828]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Plugin::RequestTimer:24 [24828]: GET /photos/A%20Tampa%20time (Mojolicious (Perl)).
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Routes:458 [24828]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Plugin::RequestTimer:48 [24828]: 200 OK (0.066553s, 15.026/s).
+Sun Apr  3 00:45:20 2011 debug Mojolicious:22 [24828]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Plugin::RequestTimer:24 [24828]: GET /photos/5429526635 (Mojolicious (Perl)).
+Sun Apr  3 00:45:20 2011 debug Mojolicious::Routes:458 [24828]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:45:22 2011 debug Mojolicious::Plugin::RequestTimer:48 [24828]: 200 OK (1.240703s, 0.806/s).
+Sun Apr  3 00:45:46 2011 debug Mojolicious:22 [24838]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:46 2011 debug Mojolicious::Plugin::RequestTimer:24 [24838]: GET /photos (Mojolicious (Perl)).
+Sun Apr  3 00:45:46 2011 debug Mojolicious::Routes:458 [24838]: Dispatching Nempire::Photos->index.
+Sun Apr  3 00:45:48 2011 debug Mojolicious::Plugin::RequestTimer:48 [24838]: 200 OK (2.717068s, 0.368/s).
+Sun Apr  3 00:45:50 2011 debug Mojolicious:22 [24838]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Plugin::RequestTimer:24 [24838]: GET /photos/a_tampa_time (Mojolicious (Perl)).
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Routes:458 [24838]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Plugin::RequestTimer:48 [24838]: 200 OK (0.094024s, 10.636/s).
+Sun Apr  3 00:45:50 2011 debug Mojolicious:22 [24838]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Plugin::RequestTimer:24 [24838]: GET /photos/72157625883388409 (Mojolicious (Perl)).
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Routes:458 [24838]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Plugin::RequestTimer:48 [24838]: 200 OK (0.067031s, 14.918/s).
+Sun Apr  3 00:45:50 2011 debug Mojolicious:22 [24838]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Plugin::RequestTimer:24 [24838]: GET /photos/A%20Tampa%20time (Mojolicious (Perl)).
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Routes:458 [24838]: Dispatching Nempire::Photos->show_set.
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Plugin::RequestTimer:48 [24838]: 200 OK (0.068611s, 14.575/s).
+Sun Apr  3 00:45:50 2011 debug Mojolicious:22 [24838]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Plugin::RequestTimer:24 [24838]: GET /photos/5429526635 (Mojolicious (Perl)).
+Sun Apr  3 00:45:50 2011 debug Mojolicious::Routes:458 [24838]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:45:51 2011 debug Mojolicious::Plugin::RequestTimer:48 [24838]: 200 OK (1.351945s, 0.740/s).
+Sun Apr  3 00:46:38 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:38 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/5429521883 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:46:38 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:46:39 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (1.149823s, 0.870/s).
+Sun Apr  3 00:46:40 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:40 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:40 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:40 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:40 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:40 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:42 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:42 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/5429522077 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:46:42 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:46:43 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (1.628647s, 0.614/s).
+Sun Apr  3 00:46:43 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:43 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:44 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:44 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:44 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:44 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:45 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:45 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/5429521883 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:46:45 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:46:47 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (1.681164s, 0.595/s).
+Sun Apr  3 00:46:47 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:47 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:47 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:48 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:48 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:48 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:48 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:48 2011 debug Mojolicious::Plugin::RequestTimer:24 [24570]: GET /photos/5429526635 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0).
+Sun Apr  3 00:46:48 2011 debug Mojolicious::Routes:458 [24570]: Dispatching Nempire::Photos->show.
+Sun Apr  3 00:46:50 2011 debug Mojolicious::Plugin::RequestTimer:48 [24570]: 200 OK (1.371864s, 0.729/s).
+Sun Apr  3 00:46:50 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:50 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:50 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:50 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:50 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
+Sun Apr  3 00:46:51 2011 debug Mojolicious:22 [24570]: Your secret passphrase needs to be changed!!!
