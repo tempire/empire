@@ -217,6 +217,20 @@ __PACKAGE__->has_many(
 # Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-03-12 21:00:40
 # DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:tE5yRrWVQRn/KUo9euKbRA
 
+sub location {
+  my $self = shift;
 
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
+  my $location = $self->locality;
+  $location .= ', ' if $self->locality and $self->region;
+  $location .= $self->region if $self->region;
+}
+
+=head1 METHODS
+
+=head2 location
+
+City, State
+
+=cut
+
 1;

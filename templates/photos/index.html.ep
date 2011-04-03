@@ -20,7 +20,7 @@ albums
       %= end
 
       <div class="date">
-        <%= $set->date->month_name %>, <%= $set->date->year %>
+        %= $set->date->month_name . ', ' . $set->date->year
       </div>
       <div class="region"><%= $set->region %></div>
     </div>

@@ -158,6 +158,31 @@ __PACKAGE__->belongs_to(
 # Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-03-12 21:00:40
 # DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:g4aav56iFJy62zsHNTLsGg
 
+use Time::Duration;
+
+=head2 primary
+
+Type: belongs_to
+
+Related object: L<Nempire::Schema::Result::Photo>
+
+Alias for L<Nempire::Schema::Result::Photo/primary_photo>
+
+=cut
+
+__PACKAGE__->belongs_to(
+  "primary",
+  "Nempire::Schema::Result::Photo",
+  { id => "primary_photo" },
+  {
+    is_deferrable => 1,
+    join_type     => "LEFT",
+    on_delete     => "CASCADE",
+    on_update     => "CASCADE",
+  },
+);
+
+
 sub date   { shift->primary_photo->taken }
 sub region { shift->primary_photo->region }
 
@@ -165,6 +190,28 @@ sub url_title {
     my $title = shift->title;
 
     return lc $title if $title =~ s/[^a-zA-Z0-9]+/_/g;
+}
+
+sub previous {
+    my $self = shift;
+    return $self->result_source->resultset->search({idx => $self->idx - 1})
+      ->first;
+}
+
+sub next {
+    my $self = shift;
+
+    return $self->result_source->resultset->search({idx => $self->idx + 1})
+      ->first;
+}
+
+sub location {
+    return shift->primary->location;
+}
+
+sub time_since {
+    my $self = shift;
+    return Time::Duration::ago(time - $self->date->epoch) if $self->date;
 }
 
 1;
@@ -181,6 +228,22 @@ Title for use in readable URLs - uses id for incompatible titles
 
 =head2 region
 
-Region from first image in photoset
+Region from set's primary photo
+
+=head2 previous
+
+Previous set, ordered by idx field
+
+=head2 next
+
+Next set, ordered by idx field
+
+=head2 location
+
+Location from set's primary photo
+
+=head2 time_since
+
+Time since photo was taken
 
 =cut
