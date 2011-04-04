@@ -25,6 +25,8 @@ sub startup {
     my $r = $self->routes;
 
     $r->add_condition(
+
+        # Requested id is a photoset?
         photoset => sub {
             my ($r, $c, $captures, $pattern) = @_;
 
