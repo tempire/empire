@@ -5,7 +5,13 @@ use Test::Mojo;
 use Nempire;
 my $t = Test::Mojo->new(app => 'Nempire');
 
-# List of sets
+# Photo not found
+$t->get_ok('/photos/bad_title')->status_is(302);
+
+# Photoset not found
+$t->get_ok('/photos/12345678912345678')->status_is(302);
+
+# All sets
 $t->get_ok('/photos')->status_is(200)
   ->element_exists('div#photosets[class*="thumbnails"]')
   ->content_like(qr/\d+\s+photos in\s+\d+\s+albums/i);
@@ -29,9 +35,9 @@ $t->get_ok("/photos/$set_title")->status_is(200)->text_is(h1 => $set_title);
 
 ok my $photo_url =
   $t->tx->res->dom('div.photoset a.slide')->[0]->attrs('href'), 'photo url';
-
 like $photo_url => qr|^/photos/\d+$|;
 
+# Photo
 $t->get_ok($photo_url)->status_is(200)->text_like('h1 a.title' => qr/$set_title/);
 
 done_testing;

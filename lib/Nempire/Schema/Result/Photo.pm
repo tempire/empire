@@ -245,6 +245,8 @@ sub location {
   my $location = $self->locality;
   $location .= ', ' if $self->locality and $self->region;
   $location .= $self->region if $self->region;
+
+  return $location;
 }
 
 sub next {

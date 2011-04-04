@@ -4,8 +4,7 @@ use Devel::Dwarn;
 
 use Test::Most;
 
-my $f = EmpireX::Flickr->new;
-
+ok my $f = EmpireX::Flickr->new;
 ok $f->login;
 ok $f->echo;
 
@@ -13,7 +12,7 @@ ok $f->echo;
 ok my @sets = $f->photosets;
 cmp_ok @sets, '>', 10;
 ok $sets[0]->{id};
-isnt ref $sets[0]->{title}      => 'hash';
+isnt ref $sets[0]->{title} => 'hash';
 ok exists $sets[0]->{description};
 isnt ref $sets[0]->{description} => 'hash';
 

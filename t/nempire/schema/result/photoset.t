@@ -31,4 +31,6 @@ like $set->time_since => qr/\d+ days and \d+ hours ago/;
 is $set->previous->id => $prev_photoset_id, 'previous photoset';
 is $set->next->id     => $next_photoset_id, 'next photoset';
 
+like $set->time_since => qr/\d+ days and \d+ hours ago/, 'time since';
+
 done_testing;

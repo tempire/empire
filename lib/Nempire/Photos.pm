@@ -18,8 +18,7 @@ sub show {
     my $id   = $self->stash->{id};
 
     my $photo = $self->db->resultset('Photo')->find($id)
-      or $self->redirect_to("/photos")
-      and return;
+      or $self->redirect_to("/photos"), return;
 
     $self->stash(photo => $photo);
 
@@ -31,8 +30,7 @@ sub show_set {
     my $id   = $self->stash->{id};
 
     my $set = $self->db->resultset('Photoset')->by_id_or_title($id)
-      or $self->redirect_to("/photos")
-      and return;
+      or $self->redirect_to("/photos"), return;
 
     $self->stash(set => $set);
 
@@ -40,3 +38,27 @@ sub show_set {
 }
 
 1;
+
+=head1 NAME
+
+Nempire::Photos
+
+=head1 DESCRIPTION
+
+/photos controller
+
+=head1 ACTIONS
+
+=head2 index
+
+GET /photos
+
+=head2 show
+
+GET /photos/:photo_id
+
+=head2 show_set
+
+GET /photos/:set_id
+
+=cut

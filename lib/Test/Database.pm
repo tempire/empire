@@ -30,7 +30,7 @@ sub import {
 
    # Compile time, verify args
    croak "Accepts either 'test' or 'production' arguments'"
-     if $type ne 'test' and $type ne 'production';
+     if $type ne 'test'; # and $type ne 'production';
 
    $type   = "new_$type";
    $schema = $self->$type->schema;
@@ -43,17 +43,17 @@ sub import {
    *{"$caller\::schema"} = \$schema;
 }
 
-sub new_production {
-   my $self = bless {} => shift;
-   my $dbname = shift;
-
-   $self->file( $dbname || dirname( abs_path($0) ) . '/../' . $self->db_name );
-
-   $schema = $self->_new( $self->file );
-   $self->schema($schema);
-
-   return $self;
-}
+#sub new_production {
+#   my $self = bless {} => shift;
+#   my $dbname = shift;
+#
+#   $self->file( $dbname || dirname( abs_path($0) ) . '/../' . $self->db_name );
+#
+#   $schema = $self->_new( $self->file );
+#   $self->schema($schema);
+#
+#   return $self;
+#}
 
 sub new_test {
    my $self = bless {} => shift;

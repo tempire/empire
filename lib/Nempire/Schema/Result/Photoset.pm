@@ -188,8 +188,9 @@ sub region { shift->primary_photo->region }
 
 sub url_title {
     my $title = shift->title;
+    $title =~ s/[^a-zA-Z0-9]+/_/g;
 
-    return lc $title if $title =~ s/[^a-zA-Z0-9]+/_/g;
+    return lc $title;
 }
 
 sub previous {
@@ -206,12 +207,11 @@ sub next {
 }
 
 sub location {
-    return shift->primary->location;
+    return shift->primary_photo->location;
 }
 
 sub time_since {
-    my $self = shift;
-    return Time::Duration::ago(time - $self->date->epoch) if $self->date;
+    return shift->primary_photo->time_since;
 }
 
 1;
