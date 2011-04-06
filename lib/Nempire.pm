@@ -38,6 +38,9 @@ sub startup {
     $r->get('/photos')->to('photos#index');
     $r->get('/photos/:id')->over('photoset')->to('photos#show_set');
     $r->get('/photos/:id')->to('photos#show');
+
+    $r->get('/blogs')->to('blogs#index');
+    $r->get('/blogs/(*tags)')->to('blogs#index');
 }
 
 1;

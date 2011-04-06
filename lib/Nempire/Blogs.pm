@@ -1,13 +1,26 @@
 package Nempire::Blogs;
+
 use Mojo::Base 'Mojolicious::Controller';
+use Devel::Dwarn;
 
 sub index {
-  my $self = shift;
+    my $self = shift;
 
-  $self->schema->resultset('Blogs');
+    # Specified tags to search for
+    my @tags = grep $_ ne 'tag',
+      @{Mojo::Path->new($self->stash->{tags})->parts};
 
-  # Render template "example/welcome.html.ep" with message
-  $self->render(message => 'Welcome to the Mojolicious Web Framework!');
+    # Default tag
+    @tags = qw/ personal / if !@tags;
+    warn "@tags";
+
+    my @blogs = $self->db->resultset('Blog')->by_tags(@tags);
+    return $self->render(status => 404) if !@blogs;
+
+    $self->render(
+        template => 'blogs/index',
+        blogs    => \@blogs,
+    );
 }
 
 1;
