@@ -27,10 +27,11 @@
 <div id="main">
    <div id="box-top"></div>
 
-   <div id="content">
+  <div id="content">
     <%= content %>
+  </div>
 
-   <div id="box-bottom"></div>
+  <div id="box-bottom"></div>
 </div>
 
 <div id="footer">
