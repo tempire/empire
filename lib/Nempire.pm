@@ -40,6 +40,10 @@ sub startup {
     $r->get('/photos/:id')->to('photos#show');
 
     $r->get('/blogs')->to('blogs#index');
+    $r->get('/blogs/(:name)')->to('blogs#show');
+    $r->get('/blogs/tag/(*tags)')->to('blogs#index');
+
+    $r->get('/blogs')->to('blogs#index');
     $r->get('/blogs/(*tags)')->to('blogs#index');
 }
 
