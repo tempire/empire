@@ -16,8 +16,7 @@ is $blog->url_title => $blog_url_title, 'url title';
 is ref $blog->created_time => 'DateTime', 'DateTime object';
 is $blog->created_time_string => 'Wednesday, April  6, 2011 at  2:27AM',
   'pretty time string';
-is $blog->snippet =>
-  'It develops because people are cesspools of fear.',
+is $blog->snippet => 'It develops because people are cesspools of fear.',
   'blog text snippet';
 
 # Tags
@@ -28,5 +27,10 @@ is [$schema->resultset('Blog')->by_tags(qw/personal/)]->[0]->title =>
 is [$schema->resultset('Blog')->by_tags(qw/test/)]->[0]->title => $blog_title;
 is [$schema->resultset('Blog')->by_tags(qw/personal test/)]->[0]->title =>
   $blog_title;
+is $schema->resultset('Blog')->hidden->all     => 1, '1 hidden entry';
+is $schema->resultset('Blog')->not_hidden->all => 3, '3 non-hidden entries';
+
+# Latest non-hidden entry
+is $schema->resultset('Blog')->latest->title => 'Tech', 'latest entry';
 
 done_testing;

@@ -35,6 +35,8 @@ sub startup {
         }
     );
 
+    $r->get('/')->to('home#index');
+
     $r->get('/photos')->to('photos#index');
     $r->get('/photos/:id')->over('photoset')->to('photos#show_set');
     $r->get('/photos/:id')->to('photos#show');

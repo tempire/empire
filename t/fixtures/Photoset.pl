@@ -40,7 +40,10 @@
         ]
     },
     Photoset => {
-        id            => "72157624605770036",
+
+        #id            => "72157624605770036",
+        id => '72157618164628634'
+        ,    # Faces of Glen id, since it's hard-coded into Home.pm controller
         title         => "Houston Correlation",
         description   => "",
         farm          => 5,

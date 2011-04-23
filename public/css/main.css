@@ -398,7 +398,7 @@ form.blogs input {
       text-decoration: none;
       color: black;
    }
-.photo img {
+.photos img {
    -moz-border-radius: .4em;
    -webkit-border-radius: .4em;
    border: solid gray 1px;
@@ -527,4 +527,10 @@ form.blogs input {
 #iphone .display img.badge {
    position: relative;
    left: 22px;
+}
+.photos.home > img:first-child {
+  width: 240px;
+}
+.photos.home > img {
+  width: 50px;
 }

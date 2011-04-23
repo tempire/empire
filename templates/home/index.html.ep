@@ -1,0 +1,20 @@
+% layout 'default';
+
+<div class="photos mini-thumbnails home">
+
+  <img src="<%= shift(@$photos)->medium %>" />
+
+  % for my $photo (@$photos) {
+    <img src="<%= $photo->square %>" />
+  % }
+
+</div>
+
+<h3>
+  <a class="more" href="/blogs">
+    %= $blog->title
+  </a>
+  <p>
+    %= $blog->snippet
+  </p>
+</h3>
