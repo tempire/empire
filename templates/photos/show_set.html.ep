@@ -1,7 +1,7 @@
 % layout 'default';
 % title $set->title . ' Phased albums';
 
-<div id="<%= $set->url_title %>" class="photoset thumbnails slide">
+<div id="<%= $set->url_title %>" class="photoset thumbnails slide photos">
   <div class="toolbar">
     % if ($set->previous) {
       <a href="/photos/<%= $set->previous->url_title %>" class="previous">Previous</a>
@@ -27,8 +27,7 @@
           class="slide"
           rel:index="<%= $photo->idx %>" 
           rel:medium="<%= $photo->medium %>">
-        <img src="<%= $photo->square %>" />
-      </a>
+        <img src="<%= $photo->square %>" /></a>
     % }
   </div>
 </div>

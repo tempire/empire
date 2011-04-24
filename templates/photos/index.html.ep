@@ -6,7 +6,7 @@ photos in
 %= int @$sets
 albums
 
-<div id="photosets" class="thumbnails">
+<div id="photosets" class="thumbnails photos">
 
   % for my $set (reverse @$sets) {
 
