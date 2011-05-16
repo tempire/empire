@@ -2,6 +2,10 @@ use Devel::Dwarn;
 use Test::Most;
 use Test::Mojo;
 
+use Test::Database;
+$ENV{TEST_DB} = 'test.db';
+Test::Database->new_test;
+
 use Nempire;
 my $t = Test::Mojo->new(app => 'Nempire');
 

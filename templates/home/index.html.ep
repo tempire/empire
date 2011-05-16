@@ -4,13 +4,11 @@
 
   % my $first = shift @$photos;
   <a href="/photos/<%= $first->id %>">
-    <img src="<%= $first->medium %>" />
-  </a>
+    <img src="<%= shift(@$photos)->medium %>" /></a>
 
   % for my $photo (@$photos) {
     <a href="/photos/<%= $photo->id %>">
-      <img src="<%= $photo->square %>" />
-    </a>
+      <img src="<%= $photo->square %>" /></a>
   % }
 
 </div>

@@ -528,9 +528,9 @@ form.blogs input {
    position: relative;
    left: 22px;
 }
-.photos.home > img:first-child {
+.photos.home > a:first-child img {
   width: 240px;
 }
-.photos.home > img {
+.photos.home > a > img {
   width: 50px;
 }
