@@ -2,10 +2,15 @@
 
 <div class="photos mini-thumbnails home">
 
-  <img src="<%= shift(@$photos)->medium %>" />
+  % my $first = shift @$photos;
+  <a href="/photos/<%= $first->id %>">
+    <img src="<%= $first->medium %>" />
+  </a>
 
   % for my $photo (@$photos) {
-    <img src="<%= $photo->square %>" />
+    <a href="/photos/<%= $photo->id %>">
+      <img src="<%= $photo->square %>" />
+    </a>
   % }
 
 </div>

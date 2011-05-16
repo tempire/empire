@@ -5,7 +5,7 @@ use Devel::Dwarn;
 use Test::Most;
 use Test::Database;
 
-my $photoset_id      = '72157624605770036';
+my $photoset_id      = '72157618164628634';
 my $photoset_title   = 'houston_correlation';
 my $prev_photoset_id = '72157624605719910';
 my $next_photoset_id = '72157624492991403';

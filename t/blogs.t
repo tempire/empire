@@ -15,6 +15,6 @@ $t->get_ok('/blogs')->status_is(200)->element_exists('ul#blogs')
 
 # One blog entry
 $t->get_ok('/blogs/hello_')->status_is(200)
-  ->element_exists->element_exists('ul#blogs')->text_is('h2 > a' => 'Hello!');
+  ->element_exists('ul#blogs')->text_is('h2 > a' => 'Hello!');
 
 done_testing;
