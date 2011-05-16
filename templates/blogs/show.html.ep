@@ -27,7 +27,7 @@
 
   <h3 class="time" title="<%= $blog->time_since %>"><%= $blog->created_time_string %></h3>
   <div class="content">
-    %= $blog->content
+    %== $blog->content
   </div>
   </li>
 

@@ -13,9 +13,10 @@ WriteMakefile(
     AUTHOR       => 'Glen Hinkle <tempire@cpan.org>',
     EXE_FILES    => ['script/nempire'],
     PREREQ_PM    => {
-        'Mojolicious'    => '1.15',
+        'Mojolicious'    => '1.32',
         'DBIx::Class'    => '0.08127',
-        'Time::Duration' => '1.06'
+        'Time::Duration' => '1.06',
+        'Net::Posterous' => '0.8',
     },
     test => {TESTS => 't/*.t t/*/*.t t/*/*/*.t'}
 );
