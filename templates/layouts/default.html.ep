@@ -36,16 +36,19 @@
 
 <div id="footer">
    <ul>
-      <li><a href="http://facebook.com/tempire/">Facebook</a></li>                  
-      <li><a href="http://www.flickr.com/photos/tempire/">Flickr</a></li>           
-      <li><a href="http://twitter.com/tempiretech">Twitter</a></li>                 
-      <li><a href="http://www.google.com/profiles/glen.hinkle">Google</a></li>  
-      <li><a href="http://zombiedolphin.com">Zombie Dolphin</a></li>                
-      <li><a href="http://careers.stackoverflow.com/glen">Resume</a></li>           
-      <li><a href="http://github.com/tempire">Githubs</a></li>                      
-      <li><a href="http://search.cpan.org/~tempire/">CPAN</a></li>                  
+      <li><a href="http://facebook.com/tempire/">Facebook</a></li>
+      <li><a href="http://www.flickr.com/photos/tempire/">Flickr</a></li>
+      <li><a href="http://twitter.com/tempiretech">Twitter</a></li>
+      <li><a href="http://www.google.com/profiles/glen.hinkle">Google</a></li>
+      <li><a href="http://zombiedolphin.com">Zombie Dolphin</a></li>
+      <li><a href="http://careers.stackoverflow.com/glen">Resume</a></li>
+      <li><a href="http://github.com/tempire">Githubs</a></li>
+      <li><a href="http://search.cpan.org/~tempire/">CPAN</a></li>
    </ul>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
 
 </body>
 </html>
