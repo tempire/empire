@@ -17,6 +17,12 @@ WriteMakefile(
         'DBIx::Class'    => '0.08127',
         'Time::Duration' => '1.06',
         'Net::Posterous' => '0.8',
+        'Lingua::EN::Summarize' => '0.2',
+        'Modern::Perl' => '1.03',
+        'Test::Most' => '0.23',
+        'File::Slurp' => '9999.18',
+        'SQL::Translator' => '0.11008',
+        'Flickr::API' => '1.04',
     },
     test => {TESTS => 't/*.t t/*/*.t t/*/*/*.t'}
 );
