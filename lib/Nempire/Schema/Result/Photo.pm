@@ -217,6 +217,8 @@ __PACKAGE__->has_many(
 # Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-03-12 21:00:40
 # DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:tE5yRrWVQRn/KUo9euKbRA
 
+use Time::Duration;
+
 =head2 set
 
 Type: belongs_to
