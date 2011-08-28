@@ -51,7 +51,6 @@ __PACKAGE__->table("blogs");
 =head2 timestamp
 
   data_type: 'timestamp'
-  datetime_undef_if_invalid: 1
   default_value: current_timestamp
   is_nullable: 0
 
@@ -76,10 +75,9 @@ __PACKAGE__->add_columns(
   { data_type => "char", is_nullable => 0, size => 20 },
   "timestamp",
   {
-    data_type => "timestamp",
-    datetime_undef_if_invalid => 1,
+    data_type     => "timestamp",
     default_value => \"current_timestamp",
-    is_nullable => 0,
+    is_nullable   => 0,
   },
   "location",
   { data_type => "char", is_nullable => 1, size => 100 },
@@ -104,8 +102,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-04-05 22:48:18
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:+eJC7aBPWEUxW6/NiufBnQ
+# Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-08-28 14:38:05
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:sRhaF/cPbGV0KIF7FH/S0A
 
 use Time::Duration;
 use DateTime;

@@ -23,6 +23,8 @@ WriteMakefile(
         'File::Slurp' => '9999.18',
         'SQL::Translator' => '0.11008',
         'Flickr::API' => '1.04',
+        'Parallel::ForkManager' => '0.7.9',
+        'Net::Posterous' => '0.8',
     },
     test => {TESTS => 't/*.t t/*/*.t t/*/*/*.t'}
 );

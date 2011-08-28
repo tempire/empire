@@ -80,9 +80,43 @@ __PACKAGE__->table("photosets");
 =head2 timestamp
 
   data_type: 'timestamp'
-  datetime_undef_if_invalid: 1
   default_value: current_timestamp
   is_nullable: 0
+
+=head2 date_create
+
+  data_type: 'integer'
+  is_nullable: 1
+
+=head2 date_update
+
+  data_type: 'integer'
+  is_nullable: 1
+
+=head2 can_comment
+
+  data_type: 'integer'
+  is_nullable: 1
+
+=head2 count_comments
+
+  data_type: 'integer'
+  is_nullable: 1
+
+=head2 count_views
+
+  data_type: 'integer'
+  is_nullable: 1
+
+=head2 needs_interstitial
+
+  data_type: 'integer'
+  is_nullable: 1
+
+=head2 visibility_can_see_set
+
+  data_type: 'integer'
+  is_nullable: 1
 
 =cut
 
@@ -109,11 +143,24 @@ __PACKAGE__->add_columns(
   { data_type => "char", is_nullable => 0, size => 255 },
   "timestamp",
   {
-    data_type => "timestamp",
-    datetime_undef_if_invalid => 1,
+    data_type     => "timestamp",
     default_value => \"current_timestamp",
-    is_nullable => 0,
+    is_nullable   => 0,
   },
+  "date_create",
+  { data_type => "integer", is_nullable => 1 },
+  "date_update",
+  { data_type => "integer", is_nullable => 1 },
+  "can_comment",
+  { data_type => "integer", is_nullable => 1 },
+  "count_comments",
+  { data_type => "integer", is_nullable => 1 },
+  "count_views",
+  { data_type => "integer", is_nullable => 1 },
+  "needs_interstitial",
+  { data_type => "integer", is_nullable => 1 },
+  "visibility_can_see_set",
+  { data_type => "integer", is_nullable => 1 },
 );
 __PACKAGE__->set_primary_key("id");
 
@@ -155,8 +202,8 @@ __PACKAGE__->belongs_to(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-03-12 21:00:40
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:g4aav56iFJy62zsHNTLsGg
+# Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-08-28 14:40:21
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:ZJDxXtmNkiJcqkSBMm13DQ
 
 use Time::Duration;
 

@@ -76,7 +76,6 @@ __PACKAGE__->table("photos");
 =head2 taken
 
   data_type: 'datetime'
-  datetime_undef_if_invalid: 1
   is_nullable: 1
 
 =head2 isprimary
@@ -150,11 +149,7 @@ __PACKAGE__->add_columns(
   "original_url",
   { data_type => "tinytext", is_nullable => 1 },
   "taken",
-  {
-    data_type => "datetime",
-    datetime_undef_if_invalid => 1,
-    is_nullable => 1,
-  },
+  { data_type => "datetime", is_nullable => 1 },
   "isprimary",
   { data_type => "char", is_nullable => 1, size => 1 },
   "small",
@@ -214,8 +209,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-03-12 21:00:40
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:tE5yRrWVQRn/KUo9euKbRA
+# Created by DBIx::Class::Schema::Loader v0.07010 @ 2011-08-28 14:38:05
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:FrgRQmP7d3y1asyBF3P4qw
 
 use Time::Duration;
 
