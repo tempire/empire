@@ -34,7 +34,7 @@ sub validate_args {
 sub execute {
     my ($self, $opt, $args) = @_;
     my $parameter = $opt->set;
-    my $subtype = 'photosets' if $opt->sets_only;
+    my $subtype; $subtype = 'photosets' if $opt->sets_only;
 
     my $schema = $self->app->schema;
 
