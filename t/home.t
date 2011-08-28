@@ -7,7 +7,7 @@ $ENV{TEST_DB} = 'test.db';
 Test::Database->new_test;
 
 use Nempire;
-my $t = Test::Mojo->new(app => 'Nempire');
+my $t = Test::Mojo->new('Nempire');
 
 $t->get_ok('/')->status_is(200)->element_exists('h3')
   ->text_is('a.more' => 'Tech');

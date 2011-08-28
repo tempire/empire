@@ -3,7 +3,7 @@ package Msync;
 use App::Cmd::Setup -app;
 use File::Slurp 'slurp';
 use Nempire::Schema;
-use Net::Riak;
+#use Net::Riak;
 
 use Mojo::Base -base;
 

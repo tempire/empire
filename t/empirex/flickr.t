@@ -1,8 +1,8 @@
 use Modern::Perl;
-use EmpireX::Flickr;
 use Devel::Dwarn;
-
 use Test::Most;
+use Mock::Quick;
+use EmpireX::Flickr;
 
 ok my $f = EmpireX::Flickr->new;
 ok $f->login;
@@ -18,7 +18,7 @@ isnt ref $sets[0]->{description} => 'hash';
 
 # Photo list
 ok my @photos = $f->photos($sets[0]->{id});
-cmp_ok @photos, '>', 10;
+cmp_ok @photos, '>', 5;
 ok $photos[0]->{title};
 
 # Photo sizes

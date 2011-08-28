@@ -32,7 +32,7 @@ ok $photo->update({idx => undef}), 'clear idx';
 ok !$photo->previous, 'returns false';
 ok !$photo->next,     'returns false';
 
-like $photo->time_since => qr/\d+ days and \d+ hours ago/, 'time since';
+like $photo->time_since => qr/\d+ \w+ and \d+ \w+ ago/, 'time since';
 ok $photo->update({taken => undef}), 'clear taken';
 ok $photo = $schema->resultset('Photo')->find($photo_id), 'refresh';
 ok !$photo->time_since, 'no time since';

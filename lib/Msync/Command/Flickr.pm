@@ -63,6 +63,7 @@ sub execute {
 
             delete $set->{primary};
 
+            warn Dwarn $set;
             my $photoset =
               $schema->resultset('Photoset')->update_or_create($set);
 

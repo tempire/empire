@@ -12,7 +12,7 @@ use Devel::Dwarn;
 sub startup {
     my $self = shift;
 
-    $self->plugin('pod_renderer');
+    $self->plugin('PODRenderer');
 
     $self->helper(
         db => sub {

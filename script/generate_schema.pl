@@ -4,7 +4,8 @@ use Modern::Perl;
 use DBIx::Class::Schema::Loader 'make_schema_at';
 
 print $DBIx::Class::Schema::Loader::VERSION;
-my @dsn = qw/ dbi:mysql:dbname=nempire /;
+#my @dsn = qw/ dbi:mysql:dbname=nempire /;
+my @dsn = qw/ dbi:SQLite:dbname=nempire.db /;
 
 my $options = {
     debug          => 1,

@@ -7,7 +7,7 @@ $ENV{TEST_DB} = 'test.db';
 Test::Database->new_test;
 
 use Nempire;
-my $t = Test::Mojo->new(app => 'Nempire');
+my $t = Test::Mojo->new('Nempire');
 
 # Blog not found
 $t->get_ok('/blogs/bad_title')->status_is(302)
