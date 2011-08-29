@@ -443,12 +443,15 @@ form.blogs input {
       margin-top: 10px;
       width: 100%;
       overflow: hidden;
-      text-align: right;
+      /*text-align: right;*/
    }
    .photoset .photo {
       height: 80px;
       float: left;
       width: 80px;
+   }
+   .photo .nav {
+     padding: 10px 5px;
    }
 /*
 .photoset .photo.primary {

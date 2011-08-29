@@ -1,5 +1,5 @@
 % layout 'default';
-% my $title = $photo->set->title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
+% my $title = $photo->set->decoded_title . '-' . $photo->idx . ' of ' . $photo->set->photos->count;
 % title $title;
 
 
@@ -9,7 +9,7 @@
         class="title" 
         href="/photos/<%= $photo->set->url_title %>"
         title="<%= $photo->set->id %>">
-      %= $photo->set->title
+      %= $photo->set->decoded_title
     </a>
   </h1>
 

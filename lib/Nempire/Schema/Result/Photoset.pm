@@ -206,6 +206,7 @@ __PACKAGE__->belongs_to(
 # DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:ZJDxXtmNkiJcqkSBMm13DQ
 
 use Time::Duration;
+use Encode;
 
 =head2 primary
 
@@ -233,11 +234,20 @@ __PACKAGE__->belongs_to(
 sub date   { shift->primary_photo->taken }
 sub region { shift->primary_photo->region }
 
-sub url_title {
-    my $title = shift->title;
-    $title =~ s/[^a-zA-Z0-9]+/_/g;
+sub decoded_title { return decode_utf8 shift->title }
 
-    return lc $title;
+sub url_title {
+  my $self = shift;
+
+  my $title = $self->decoded_title;
+  $title =~ s/[^a-zA-Z0-9]+/_/g;
+
+  warn $title if $self->id eq '72157621680562327';
+  # Other languages don't translate to url naming Scheme
+  return $self->id if $title eq '_';
+  warn $title if $self->id eq '72157621680562327';
+
+  return lc $title;
 }
 
 sub previous {
@@ -268,6 +278,10 @@ sub time_since {
 =head2 date
 
 Datetime object from set's primary photo
+
+=head2 decoded_title
+
+Title decoded from utf8
 
 =head2 url_title
 

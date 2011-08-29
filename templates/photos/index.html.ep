@@ -16,7 +16,7 @@ albums
       %= link_to '/photos/' . $set->url_title => begin
         <div class="label"><%= $set->photos->count %></div>
         %= image $set->primary_photo->square, alt => 'Primary photo'
-        <div class="title"><%= $set->title %></div>
+        <div class="title"><%= $set->decoded_title %></div>
       %= end
 
       <div class="date">

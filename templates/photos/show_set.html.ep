@@ -3,13 +3,14 @@
 
 <div id="<%= $set->url_title %>" class="photoset thumbnails slide photos">
   <div class="toolbar">
+    <a href="/photos">All Photos</a>
     % if ($set->previous) {
       <a href="/photos/<%= $set->previous->url_title %>" class="previous">Previous</a>
     % }
     % if ($set->next) {
       <a href="/photos/<%= $set->next->url_title %>" class="next">Next</a>
     % }
-    <h1><%= $set->title %></h1>
+    <h1><%= $set->decoded_title %></h1>
     <ul class="horizontal-list">
       <li><span class="location">
         <%= $set->location %></span></li>
@@ -21,7 +22,7 @@
         <%= $set->photos->count %> Photos</span></li>
     </ul>
   </div>
-  <div>
+  <div class="photos">
     % foreach my $photo ( $set->photos->all ) {
       <a href="/photos/<%= $photo->id %>"
           class="slide"
