@@ -534,6 +534,6 @@ form.blogs input {
 .photos.home > a:first-child img {
   width: 240px;
 }
-.photos.home > a > img {
-  width: 50px;
+a.photo > img {
+  width: 40px;
 }
