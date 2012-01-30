@@ -4,22 +4,17 @@ use Nempire::Schema;
 use Mojo::Base 'Mojolicious';
 use Devel::Dwarn;
 
-#has schema => sub {
-#    my $dsn = 'dbi:SQLite:' . ($ENV{TEST_DB} || 'nempire.db');
-#    return Nempire::Schema->connect($dsn);
-#};
+has schema => sub {
+    my $dsn = 'dbi:SQLite:' . ($ENV{TEST_DB} || 'nempire.db');
+    return Nempire::Schema->connect($dsn);
+};
 
 sub startup {
     my $self = shift;
 
     $self->plugin('PODRenderer');
 
-    $self->helper(
-        db => sub {
-            my $dsn = 'dbi:SQLite:' . ($ENV{TEST_DB} || 'nempire.db');
-            return Nempire::Schema->connect($dsn);
-        }
-    );
+    $self->helper(db => sub { $self->app->schema });
 
     # Routes
     my $r = $self->routes;
